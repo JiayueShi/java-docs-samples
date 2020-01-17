@@ -80,5 +80,9 @@ public class CreateCluster {
       System.err.println(String.format("Error executing createCluster: %s ", e.getMessage()));
     }
   }
+
+  public static void main(String[] args) throws IOException, InterruptedException {
+    createCluster(args[0], args[1], args[2]);
+  }
 }
 // [END dataproc_create_cluster]
